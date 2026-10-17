@@ -1,21 +1,21 @@
 class Plaid < Formula
   desc "CLI for the Plaid API"
   homepage "https://plaid.com/docs/resources/cli/"
-  version "20260909-fcd14fe6"
+  version "20261017-c0f64a03"
   license :cannot_represent
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://releases.plaid.com/plaid-cli/releases/20260909-fcd14fe6/plaid-cli_#{version}_darwin_arm64.tar.gz"
-    sha256 "9727b091851d8c14e9cf75609132371e763681e56a7925df91d6e68889940607"
+    url "https://releases.plaid.com/plaid-cli/releases/20261017-c0f64a03/plaid-cli_#{version}_darwin_arm64.tar.gz"
+    sha256 "275e2aa2e1c146dd96352662729f1dcab36452493eb38a057624ae1e28ab2255"
   elsif OS.mac?
-    url "https://releases.plaid.com/plaid-cli/releases/20260909-fcd14fe6/plaid-cli_#{version}_darwin_amd64.tar.gz"
-    sha256 "25fdbb6b14548b9403d7b64cf31df8f6667928b42b53b31b5f409f30632fccba"
+    url "https://releases.plaid.com/plaid-cli/releases/20261017-c0f64a03/plaid-cli_#{version}_darwin_amd64.tar.gz"
+    sha256 "62d4008c7e8426c3ccd976e6c9f3abf61f48c114f7c77166ee37f5c30cb229b5"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://releases.plaid.com/plaid-cli/releases/20260909-fcd14fe6/plaid-cli_#{version}_linux_arm64.tar.gz"
-    sha256 "138a15bd2aacfabd77d4a628a634a0bc3ca3b6ebcfc2b5574221e670dd3aef04"
+    url "https://releases.plaid.com/plaid-cli/releases/20261017-c0f64a03/plaid-cli_#{version}_linux_arm64.tar.gz"
+    sha256 "af6440d71010bfcae09c4abb2192ef38867be528835241e7bdabc534cb4c468f"
   else
-    url "https://releases.plaid.com/plaid-cli/releases/20260909-fcd14fe6/plaid-cli_#{version}_linux_amd64.tar.gz"
-    sha256 "e8e22f3777338d9dc955dfb0fd6d102e8d25d432b86c42aedab44886f0bdbf82"
+    url "https://releases.plaid.com/plaid-cli/releases/20261017-c0f64a03/plaid-cli_#{version}_linux_amd64.tar.gz"
+    sha256 "f7ec4eafac7012aa829242a4fd4b0cdf0b179b91a9a299c0c3cc35054e7b3633"
   end
 
   def install
